@@ -1,0 +1,16 @@
+h2{
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+    background-color: cadetblue;
+
+}

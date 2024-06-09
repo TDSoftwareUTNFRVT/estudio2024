@@ -1,0 +1,23 @@
+
+<div 
+    *ngIf="resultado; else noEncontrado"
+>
+    <h2>{{ miLibro.nombre }}</h2>
+    <h3>{{ miLibro.genero }} </h3>
+    
+</div>
+<ng-template #noEncontrado >
+    <h2>Libro no encontrado</h2>
+</ng-template>
+
+
+<div>
+    <h2>Listado de Libros</h2>
+    <div
+        *ngFor="let libro of coleccion"
+    >
+        <p> {{ libro.nombre }} </p>
+        <label>contiene {{ libro.paginas }} páginas</label>
+    </div>
+</div>
+

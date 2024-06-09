@@ -1,0 +1,8 @@
+<H2 class="colorFuentePrimaria">Componente Padre</H2>
+
+<div class="conteiner">
+    <app-hijo 
+        [mensaje]="envioMensajeHijo" 
+        (mensajeHijo)="recibirMensaje($event)"
+    ></app-hijo>
+</div>
