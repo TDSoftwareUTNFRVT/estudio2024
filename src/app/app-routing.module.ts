@@ -1,7 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { RecibeFormularioComponent } from './components/recibe-formulario/recibe-formulario.component';
+import { PadreComponent } from './components/padre/padre.component';
+
+const routes: Routes = [
+  {
+    path:'',
+    component: RecibeFormularioComponent
+  },
+  {
+    path:'padre',
+    component: PadreComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

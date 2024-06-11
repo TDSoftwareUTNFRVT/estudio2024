@@ -1,0 +1,19 @@
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 25%;
+}
+
+.formulario input{
+    width: 100%;
+    height: 30px;
+    margin: 3px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    
+}
+
+.formulario input:hover{
+    border-color: rgb(222, 82, 12);
+}

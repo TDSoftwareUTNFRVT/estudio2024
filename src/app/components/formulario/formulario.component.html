@@ -1,0 +1,33 @@
+<div class="formulario">
+    <form (ngSubmit)="enviarDatos()">
+        <input 
+            type="text"
+            placeholder="nombre.."
+            [(ngModel)]="persona.nombre"
+            name="nombre"
+        >
+        <input 
+            [(ngModel)] = "persona.apellido"
+            type="text"
+            placeholder="apellido.."
+            name="apellido"
+        >
+        <input 
+            type="number"
+            placeholder="edad.."
+            [(ngModel)] = "persona.edad"
+            name="edad"
+        >
+        <input 
+            type="text"
+            placeholder="domicilio.."
+            [(ngModel)] = "persona.domicilio"
+            name="domicilio"
+        >
+        <button
+            type="submit"
+        >
+            Enviar
+        </button>
+    </form>
+</div>

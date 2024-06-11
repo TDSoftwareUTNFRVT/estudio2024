@@ -1,0 +1,16 @@
+<app-formulario
+    (datosEnviados)="mostrarDatos($event)"
+></app-formulario>
+
+<div
+    *ngIf="persona.edad>0"
+>
+    <label>Nombre:</label>
+    {{ persona.nombre }}
+    <label>Apellido:</label>
+    {{ persona.apellido }}
+    <label>Edad:</label>
+    {{ persona.edad }}
+    <label>Domicilio:</label>
+    {{ persona.domicilio }}
+</div>
