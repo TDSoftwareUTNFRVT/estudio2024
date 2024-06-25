@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, importProvidersFrom } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
@@ -10,6 +10,8 @@ import { HijoComponent } from './components/hijo/hijo.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { RecibeFormularioComponent } from './components/recibe-formulario/recibe-formulario.component';
 
+import { HttpClientModule} from '@angular/common/http';
+import { RickComponent } from './components/rick/rick.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,12 +20,14 @@ import { RecibeFormularioComponent } from './components/recibe-formulario/recibe
     HijoComponent,
     FormularioComponent,
     RecibeFormularioComponent,
+    RickComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

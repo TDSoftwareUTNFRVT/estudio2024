@@ -1,0 +1,18 @@
+<button
+    (click)="buscoPersonajes()">
+    Ver Personajes
+</button>
+
+<button
+    (click)="irA(prevPage)"
+    *ngIf="prevPage">
+  Previous
+</button>
+<button
+    (click)="irA(nextPage)">
+  Next
+</button>
+
+<h3 *ngFor="let personaje of listaPersonajes">
+    {{personaje.name}}
+</h3>
